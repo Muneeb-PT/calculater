@@ -4,16 +4,23 @@ let screen2 = document.getElementById("screen2"); //answer screen
 let calculation = ""; //store the calculation
 
 function showValue(button) {
-    let value = button.innerText; //get the value of the button
-    calculation += value; //append the value to the calculation
-    screen.innerText = calculation; //display the calculation on the screen
+    let value = button.innerText;
+    if (calculation === "0") {
+        calculation = value;
+    } else {
+        calculation += value;
+    }
 
-
+    screen.innerText = calculation;
     document.getElementById("cancell").onclick = function () {
         calculation = calculation.slice(0, -1);
-        screen.textContent = calculation
+
+        if (calculation === "") {
+            calculation = "0";
+        }
+
+        screen.textContent = calculation;
     }
-    
 }
 
 
