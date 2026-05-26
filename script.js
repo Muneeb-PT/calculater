@@ -52,7 +52,7 @@ function showSing(button) {
 }
 if (value === "C"){
         calculation = ""; //clear the calculation
-        screen.innerText = ""; //clear the screen
+        screen.innerText = "0"; //clear the screen
         screen2.innerText = ""; //clear the answer screen
     } else if (value === "=") {
         let result = eval(calculation); //evaluate the calculation
