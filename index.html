@@ -5,95 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-             background-color: rgb(191, 191, 191);
-             display: flex;
-            justify-content: center;
-             align-items: center;
-             height: 100vh;
-            margin: 0;
-        }
-#body{
-            background-color: black;
-            justify-content: center;
-            display:flex;
-            flex-direction: column;
-            padding: 20px;
-            border-radius: 30px;
-
-            
-        }
-        p {
-            color: #fc7f49;
-            text-align: right;
-            
-        }
-#screen {
-            height: 50px;
-            width: 245px;
-            color: rgb(56, 55, 55);
-            font-size: 50px;
-            text-align: left;
-            margin: 0;
-            
-        }
-        button {
-            background-color: rgb(2, 249, 167);
-            width: 60px;
-            height: 60px;
-            border-radius: 50px;
-            font-size: medium;
-
-        }
-        #screen2 {
-            height: 50px;
-            width: 245px;
-            color: rgb(70, 70, 70);
-            text-align: right;
-            font-size: 30px;
-            margin: 0;
-        }
-        #disp {
-            height: 100px;
-            width: 245px;
-            background-color: #e3e2e2;
-            padding: 5px;
-            border-radius: 10px;
-        }
-        #cancell {
-            background-color: rgba(2, 249, 167, 0);
-            width: 20px;
-            height: 20px;;
-            font-size: 10px;
-            border-color: #e3e2e200;
-            font-size: medium;
-        }
-        .group{
-           margin: 0;
-           width: 245px;
-        }
-        .line {
-            display: flex;
-             justify-content: space-between;
-            align-items: center;
-            padding-right: 5px;
-
-        }
-        #color-btn, #color-shell {
-            background-color: rgb(34, 0, 255);
-            width: 80px;
-            height: 40px;
-            font-size: medium;
-            margin-bottom: 20px;
-            color: white;
-        }
-        nav {
-            align-self: flex-start;
-            margin: 10px;
-        }
   
-    </style>
 </head>
 <body>
     <nav><button onclick="showColor(this)" id="color-btn">COLOR</button> <button onclick="showColorShell(this)" id="color-shell">BODYS</button></nav>
@@ -117,11 +29,11 @@
 </div>
 </div><br><br>
     <div id="number">
-        <button style="background-color: #f34303;" onclick="showSing(this)" value="C" id="c">C</button> <button onclick="showSing(this)" value="b">()</button> <button onclick="showSing(this)" value="%">%</button> <button onclick="showSing(this)">/</button><br>
+        <button onclick="showSing(this)" value="C" id="c">C</button> <button onclick="showSing(this)" value="b">()</button> <button onclick="showSing(this)" value="%">%</button> <button onclick="showSing(this)">/</button><br>
         <button onclick="showValue(this)" value="7">7</button > <button onclick="showValue(this)" value="8">8</button> <button onclick="showValue(this)" value="9">9</button> <button onclick="showSing(this)" value="*">x</button><br>
         <button onclick="showValue(this)" value="4">4</button> <button onclick="showValue(this)" value="5">5</button> <button onclick="showValue(this)" value="6">6</button> <button onclick="showSing(this)" value="-">-</button><br>
         <button onclick="showValue(this)" value="1">1</button> <button onclick="showValue(this)" value="2">2</button> <button onclick="showValue(this)" value="3">3</button> <button onclick="showSing(this)" value="+">+</button><br>
-        <button onclick="showSing(this)" value="+/-"><sup>+</sup>/<sub >-</sub></button> <button onclick="showValue(this)" value="0">0</button> <button onclick="showValue(this)" value=".">.</button> <button style="background-color: rgb(87, 252, 5);" onclick="showSing(this)" value="eq"id="eq">=</button><br>
+        <button onclick="showSing(this)" value="+/-"><sup>+</sup>/<sub >-</sub></button> <button onclick="showValue(this)" value="0">0</button> <button onclick="showValue(this)" value=".">.</button> <button  onclick="showSing(this)" value="eq"id="eq">=</button><br>
     </div>
    </div>
    <script src="script.js"></script> 
