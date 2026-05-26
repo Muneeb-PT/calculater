@@ -1,7 +1,8 @@
 let screen = document.getElementById("screen"); //display screen
 let screen2 = document.getElementById("screen2"); //answer screen
 
-let calculation = ""; //store the calculation
+let calculation = "0";
+screen.innerText = calculation;//store the calculation
 
 function showValue(button) {
     let value = button.innerText;
@@ -51,7 +52,7 @@ function showSing(button) {
     
 }
 if (value === "C"){
-        calculation = ""; //clear the calculation
+        calculation = "0"; //clear the calculation
         screen.innerText = "0"; //clear the screen
         screen2.innerText = ""; //clear the answer screen
     } else if (value === "=") {
