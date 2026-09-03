@@ -1,1 +1,1 @@
-https://muneeb-pt.github.io/calculater/
+https://muneeb-pt.github.io/Calculator/
